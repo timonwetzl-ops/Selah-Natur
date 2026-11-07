@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selah Natur – Innehalten. Aufatmen. Auftanken.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="#naturparfum">Naturparfüm</a>
+    <a href="#hausapotheke">Hausapotheke</a>
+    <a href="#gesundheit">Gesundheit</a>
+    <a href="#entspannung">Entspannung</a>
+    <a href="#gutschein">Gutschein</a>
+    <a href="#shop">Shop</a>
+  </nav>
+  <div class="hero">
+    <h1>Selah Natur</h1>
+    <p>Selah heißt: innehalten. Zur Ruhe kommen und sich um Körper und Herz kümmern – innen wie außen.</p>
+    <a class="btn" href="#gutschein">Gutschein verschenken</a>
+  </div>
+</header>
+
+<main>
+  <section class="tiles">
+    <a class="tile" href="#naturparfum"><span class="icon">🌿</span><h2>Naturparfüm</h2><p>Komponieren · Erleben</p></a>
+    <a class="tile" href="#hausapotheke"><span class="icon">🌿</span><h2>Hausapotheke</h2><p>Entdecken · Verstehen</p></a>
+    <a class="tile" href="#gesundheit"><span class="icon">🌿</span><h2>Gesundheit</h2><p>Beraten · Begleiten</p></a>
+    <a class="tile" href="#entspannung"><span class="icon">🌿</span><h2>Entspannung</h2><p>Schröpfen · Auftanken</p></a>
+  </section>
+
+  <section id="naturparfum">
+    <h2>Naturparfüm – ein Duft-Erlebnis auf Burg Mylau</h2>
+    <p>Komponiere dein eigenes Eau de Parfum – ausschließlich aus rein natürlichen Rohstoffen: ätherische Öle, Absoluten und Harze. Auf der Burg Mylau in 08499 Mylau nehmen wir uns Zeit für Düfte.</p>
+    <ul>
+      <li>2,5 Stunden: erst eine Stunde Wissen, dann Riechen und Komponieren</li>
+      <li>Parfümgeschichte, Düfte und limbisches System, Duftaufbau, ätherische Öle</li>
+      <li>Viele Rezepte zur Auswahl – oder kreiere deinen ganz eigenen Duft</li>
+      <li>Dein Eau de Parfum im hochwertigen 30-ml-Flakon zum Mitnehmen</li>
+      <li>Getränke und kleine Snacks inklusive</li>
+    </ul>
+    <p><a class="btn" href="#gutschein">Gutschein kaufen</a></p>
+  </section>
+
+  <section id="hausapotheke">
+    <h2>Hausapotheke – Die geheime Hausapotheke</h2>
+    <p class="soon">Coming soon …</p>
+    <p>Ein Escape-Erlebnis auf Burg Mylau: Öffne Koffer, entdecke uraltes Heilwissen und mische direkt selbst, zum Beispiel Salbe und Tinktur. Zwei bis drei Dinge für deine Gesundheit nimmst du mit nach Hause. Dauer: 2,5 Stunden.</p>
+    <p>Später folgen Wissensabende wie „Herz stärken“ und „Darm stärken“.</p>
+  </section>
+
+  <section id="gesundheit">
+    <h2>Gesundheit – Beraten · Begleiten</h2>
+    <p>Gesundheitsberatung und Begleitung – und beim Walk and Talk in der Natur ist Raum zum Zuhören, Reden und Bewegen.</p>
+  </section>
+
+  <section id="entspannung">
+    <h2>Entspannung – Schröpfen · Auftanken</h2>
+    <p class="soon">Demnächst</p>
+    <p>Massagen und Schröpfmassagen, um loszulassen und aufzutanken.</p>
+  </section>
+
+  <section id="gutschein">
+    <h2>Gutschein für den Naturparfüm-Workshop</h2>
+    <p>Das Weihnachtsgeschenk, das Zeit schenkt. Gib die Daten ein, drucke den Gutschein oder speichere ihn als PDF.</p>
+    <div class="voucher-wrap">
+      <form id="voucherForm">
+        <label>Für <input id="to" placeholder="Name der beschenkten Person"></label>
+        <label>Von <input id="from" placeholder="Dein Name"></label>
+        <label>Persönliche Worte <textarea id="msg" rows="3" placeholder="Herzlichen Glückwunsch …"></textarea></label>
+        <label>Personen <select id="count"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <button type="button" class="btn" id="printBtn">Drucken / als PDF</button>
+        <button type="button" class="btn ghost" id="mailBtn">Per E-Mail bestellen</button>
+      </form>
+      <div class="voucher" id="voucher">
+        <div class="v-logo">🌿</div>
+        <h3>Gutschein</h3>
+        <p class="v-sub">Naturparfüm-Workshop · Burg Mylau</p>
+        <p>für <strong id="vTo">…</strong><span id="vCount"></span></p>
+        <p class="v-msg" id="vMsg">Ein Duft-Erlebnis zum Innehalten.</p>
+        <p>von <strong id="vFrom">…</strong></p>
+        <p class="v-nr" id="vNr"></p>
+        <p class="v-small">Selah Natur · Selah heißt innehalten</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2>Online-Shop</h2>
+    <p>Naturkosmetik, ätherische Öle und weitere gesunde Produkte – der Shop ist im Aufbau.</p>
+  </section>
+</main>
+
+<footer>© Selah Natur · Burg Mylau, 08499 Mylau</footer>
+<script src="script.js"></script>
+</body>
+</html>
